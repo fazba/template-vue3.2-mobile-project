@@ -1,0 +1,8 @@
+/node_modules/
+/public/
+.vscode
+.idea
+*.md
+index.html
+reset.css
+stats.html
