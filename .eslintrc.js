@@ -9,7 +9,7 @@ module.exports = {
     '@vue/typescript/recommended',
     'prettier',
     '@vue/prettier',
-    '@vue/prettier/@typescript-eslint',
+    // '@vue/prettier/@typescript-eslint',
   ],
   plugins: ['prettier'],
   parserOptions: {
@@ -28,7 +28,10 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['**/__tests__/*.{j,t}s?(x)', '**/tests/unit/**/*.spec.{j,t}s?(x)'],
+      files: [
+        '**/__tests__/*.{j,t}s?(x)',
+        '**/tests/unit/**/*.spec.{j,t}s?(x)',
+      ],
       env: {
         mocha: true,
       },
