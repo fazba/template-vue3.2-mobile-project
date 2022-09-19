@@ -10,6 +10,9 @@ dist.*
 # ignore package-lock.json
 package-lock.json
 
+.eslintcache
+
+
 # local env files
 .env.local
 .env.*.local
