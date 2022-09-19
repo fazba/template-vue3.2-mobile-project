@@ -9,7 +9,7 @@ module.exports = {
     '@vue/typescript/recommended',
     'prettier',
     '@vue/prettier',
-    '@vue/prettier/@typescript-eslint',
+    // '@vue/prettier/@typescript-eslint',
   ],
   plugins: ['prettier'],
   parserOptions: {

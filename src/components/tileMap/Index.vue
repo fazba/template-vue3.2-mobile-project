@@ -18,6 +18,7 @@ nextTick(() => {
     throw new Error('tile map error')
   }
   tileMap.addTo(props.map)
+  console.log('test')
 })
 </script>
 <style scoped lang="less"></style>
