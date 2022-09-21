@@ -11,13 +11,13 @@ const props = defineProps<{
 }>()
 
 /**切换底图 */
-const { tileMap, currentBasemap, baseMap, changeBasemap } = useTileMap()
+// const { tileMap, currentBasemap, baseMap, changeBasemap } = useTileMap()
 
 nextTick(() => {
   if (!props.map) {
     throw new Error('tile map error')
   }
-  tileMap.addTo(props.map)
+  // tileMap.addTo(props.map)
   console.log('test')
 })
 </script>

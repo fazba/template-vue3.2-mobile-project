@@ -1,16 +1,5 @@
 <template>
   <div class="login">
-    <div class="bg">
-      <img src="@/assets/img/login_bg.png" alt="" />
-    </div>
-    <div class="title">
-      <span>陆上风电场施工</span>
-      <span>辅助决策系统</span>
-    </div>
-    <div class="form">
-      <input v-model="username" type="text" placeholder="请输入用户名" />
-      <input v-model="password" type="password" placeholder="请输入密码" />
-    </div>
     <div class="login-btn" @click="login">登录</div>
   </div>
 </template>
@@ -24,8 +13,8 @@ const username = ref('')
 const password = ref('')
 
 function deCode(str: string) {
-  let encode = encodeURI(str)
-  let base64 = btoa(encode)
+  const encode = encodeURI(str)
+  const base64 = btoa(encode)
   return base64
 }
 /** 登录 */
