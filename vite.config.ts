@@ -1,10 +1,22 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { visualizer } from 'rollup-plugin-visualizer'
+import { viteVConsole } from 'vite-plugin-vconsole'
+import path from 'path'
+
 export default defineConfig({
   plugins: [
     vue(),
     visualizer(),
+    viteVConsole({
+      entry: path.resolve('src/main.ts'),
+      localEnabled: true,
+      enabled: true,
+      config: {
+        maxLogNumber: 1000,
+        theme: 'dark',
+      },
+    }),
   ],
   resolve: {
     alias: {

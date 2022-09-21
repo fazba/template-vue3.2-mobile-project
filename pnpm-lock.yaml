@@ -27,6 +27,7 @@ specifiers:
   vant: ^3.6.1
   vconsole: ^3.14.6
   vite: ^3.0.0
+  vite-plugin-vconsole: ^1.2.2
   vue: ^3.2.25
   vue-router: ^4.0.12
   vue-tsc: ^0.40.0
@@ -64,6 +65,7 @@ devDependencies:
   typescript: 4.8.3
   vconsole: 3.14.6
   vite: 3.1.2_less@4.1.3
+  vite-plugin-vconsole: 1.2.2
   vue-tsc: 0.40.13_typescript@4.8.3
 
 packages:
@@ -2328,6 +2330,10 @@ packages:
       copy-text-to-clipboard: 3.0.1
       core-js: 3.25.2
       mutation-observer: 1.0.3
+    dev: true
+
+  /vite-plugin-vconsole/1.2.2:
+    resolution: {integrity: sha512-eB0uyQzEQAijpxxcgnE9h/k0y6Lr5wiYeq+OW/4hPT7sNwd4KVqMKQXArTn5S6zy8Uo7ae7ulAU3atczekAGAw==}
     dev: true
 
   /vite/3.1.2_less@4.1.3:

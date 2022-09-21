@@ -51,6 +51,7 @@
     "typescript": "^4.3.2",
     "vconsole": "^3.14.6",
     "vite": "^3.0.0",
+    "vite-plugin-vconsole": "^1.2.2",
     "vue-tsc": "^0.40.0"
   },
   "simple-git-hooks": {
