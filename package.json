@@ -22,6 +22,7 @@
   "dependencies": {
     "axios": "^0.27.0",
     "cqkj-map": "^2.8.3",
+    "dayjs": "^1.11.5",
     "vant": "^3.6.1",
     "vue": "^3.2.25",
     "vue-router": "^4.0.12",

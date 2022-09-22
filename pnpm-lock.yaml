@@ -10,6 +10,7 @@ specifiers:
   '@vue/eslint-config-typescript': ^11.0.0
   axios: ^0.27.0
   cqkj-map: ^2.8.3
+  dayjs: ^1.11.5
   eslint: ^8.23.0
   eslint-config-prettier: ^8.5.0
   eslint-plugin-prettier: ^4.2.0
@@ -36,6 +37,7 @@ specifiers:
 dependencies:
   axios: 0.27.2
   cqkj-map: 2.8.8
+  dayjs: 1.11.5
   vant: 3.6.2_vue@3.2.39
   vue: 3.2.39
   vue-router: 4.1.5_vue@3.2.39
@@ -749,6 +751,10 @@ packages:
 
   /csstype/2.6.21:
     resolution: {integrity: sha512-Z1PhmomIfypOpoMjRQB70jfvy/wxT50qW08YXO5lMIJkrdq4yOTR+AW7FqutScmB9NkLwxo+jU+kZLbofZZq/w==}
+
+  /dayjs/1.11.5:
+    resolution: {integrity: sha512-CAdX5Q3YW3Gclyo5Vpqkgpj8fSdLQcRuzfX6mC6Phy0nfJ0eGYOeS7m4mt2plDWLAtA4TqTakvbboHvUxfe4iA==}
+    dev: false
 
   /debug/3.2.7:
     resolution: {integrity: sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ==}
