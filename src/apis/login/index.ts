@@ -1,7 +1,9 @@
-import { server } from '@/plugins/axios'
+import { server } from "@/plugins/axios";
 
-/**登录 */
-export const getLogin = async (username: string, password: string) => {
-  const res = await server.post('/user/login', { username, password })
-  return res
+export async function getToken(account: string, password: string) {
+  const res = await server.post("/login", {
+    account,
+    password,
+  });
+  return res.data.token;
 }

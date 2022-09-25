@@ -1,6 +1,6 @@
 import axios from 'axios'
 import { Toast } from 'vant'
-import useCancelRepeatRequest from './cancelRepeatRequest'
+import useCancelRepeatRequest from "../utils/cancelRepeatRequest";
 
 //取消重复请求
 const { addPendingRequest, removePendingRequest } = useCancelRepeatRequest()

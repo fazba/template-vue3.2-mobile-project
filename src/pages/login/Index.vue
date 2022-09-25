@@ -41,57 +41,5 @@ async function login() {
   background-color: #000410;
   box-sizing: border-box;
   padding: 70px 17px 0 17px;
-  .title {
-    font-size: 32px;
-    display: flex;
-    flex-direction: column;
-    color: #fff;
-    span:last-child {
-      margin-top: 20px;
-    }
-  }
-  .form {
-    display: flex;
-    flex-direction: column;
-    input:first-child {
-      margin-top: 50px;
-    }
-    input {
-      width: 100%;
-      height: 49px;
-      border-radius: 5px;
-      background-color: #000410;
-      margin-top: 24px;
-      font-size: 16px;
-      padding-left: 10px;
-      box-sizing: border-box;
-      border: 1px solid #999999;
-      color: #fff;
-      // outline: medium;
-    }
-  }
-  .bg {
-    width: 100%;
-    height: 200px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    img {
-      width: 100%;
-    }
-  }
-  .login-btn {
-    width: 100%;
-    height: 49px;
-    background-color: #56a4ff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 150px;
-    border-radius: 5px;
-  }
 }
 </style>
