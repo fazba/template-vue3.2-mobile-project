@@ -26,7 +26,7 @@ class MyCache {
     return this.storage.key(index)
   }
 
-  length() {
+  get length() {
     return this.storage.length
   }
 }
