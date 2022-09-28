@@ -1,4 +1,4 @@
-import { customRef } from "vue";
+import { customRef } from 'vue'
 
 /**
  * 为目标函数添加防抖
@@ -7,35 +7,39 @@ import { customRef } from "vue";
  * @param immediately 是否立刻执行
  * @returns 防抖的目标函数
  */
-export function antiShake<T extends (...args: any) => void>(func: T, time = 0, immediately = false): T {
-  let handler = 0;
-  let lock = 0;
+export function antiShake<T extends (...args: any) => void>(
+  func: T,
+  time = 0,
+  immediately = false
+): T {
+  let handler = 0
+  let lock = 0
   if (immediately) {
     return function (...args: any) {
-      const now = Date.now();
+      const now = Date.now()
       if (handler) {
-        clearTimeout(handler);
+        clearTimeout(handler)
       }
       if (lock < now) {
-        func(...args);
-        lock = now + time;
+        func(...args)
+        lock = now + time
       } else {
         handler = window.setTimeout(() => {
-          handler = 0;
-          func(...args);
-        }, time);
+          handler = 0
+          func(...args)
+        }, time)
       }
-    } as T;
+    } as T
   } else {
     return function (...args: any) {
       if (handler) {
-        clearTimeout(handler);
+        clearTimeout(handler)
       }
       handler = window.setTimeout(() => {
-        handler = 0;
-        func(...args);
-      }, time);
-    } as T;
+        handler = 0
+        func(...args)
+      }, time)
+    } as T
   }
 }
 
@@ -46,24 +50,28 @@ export function antiShake<T extends (...args: any) => void>(func: T, time = 0, i
  * @param immediate 是否立刻执行一次
  * @returns
  */
-export function getCustomRef<T>(value: T, onChange: (val: T) => void, immediate = false) {
+export function getCustomRef<T>(
+  value: T,
+  onChange: (val: T) => void,
+  immediate = false
+) {
   if (immediate) {
-    onChange(value);
+    onChange(value)
   }
   return customRef((track, trigger) => {
-    let _value = value;
+    let _value = value
     return {
       get() {
-        track();
-        return _value;
+        track()
+        return _value
       },
       set(val: T) {
         if (_value != val) {
-          _value = val;
-          onChange(_value);
-          trigger();
+          _value = val
+          onChange(_value)
+          trigger()
         }
       },
-    };
-  });
+    }
+  })
 }
