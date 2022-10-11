@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import { Toast } from 'vant'
+import { sessionCache } from '@/utils/storage'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -26,7 +27,7 @@ router.beforeEach((to, from, next) => {
     message: '加载中...',
   })
   if (to.path === '/login') return next()
-  if (sessionStorage.getItem('userType') == null) return next('/login')
+  if (sessionCache.getItem('userType') == null) return next('/login')
   if (to.matched.length === 0) {
     from.path ? next({ path: from.path }) : next('/')
   } else {
