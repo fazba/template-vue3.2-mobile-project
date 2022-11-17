@@ -5,7 +5,7 @@ class MyCache {
   }
 
   setItem(key: string, value: any) {
-    if (typeof value === 'object') value = JSON.stringify(value)
+    if (['object', 'string'].includes(typeof value)) value = JSON.stringify(value)
     this.storage.setItem(key, value)
   }
 
